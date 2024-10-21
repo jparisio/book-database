@@ -118,7 +118,8 @@ export default function App() {
                 exit="exit"
               >
                 <em>{book.title}</em> <strong>by {book.author}</strong>:{" "}
-                {book.genre} {book.publication_date} {book.isbn}
+                {book.genre} {book.publication_date} {"("}isbn: {book.isbn}
+                {")"}
               </motion.ul>
             )
           )}
